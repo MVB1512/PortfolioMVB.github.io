@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Martin Perfil</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Martin Vallejo Barranco </h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">EDUCACIÓN</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">HOBBIES</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy Martin Vallejo, Desarrollador Web</h2>
+                <p class="descripcion">Desliza y conoce más sobre mi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/cafff9a7-f28d-4ad6-9b4c-4983afc06c88.jfif" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Mi nombre es Martin Vallejo Barranco </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur reprehenderit voluptatibus blanditiis nulla adipisci iste fuga expedita, ea exercitationem dicta, similique rem, atque soluta recusandae ipsam autem. Sapiente, quo ducimus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a beatae natus.</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MI EDUCACIÓN FUERA DEL COLEGIO Y PROYECTOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i  class="fa-solid fa-code"></i></span>
+                <h4>Curso desarrollo  lenguaje HTML </h4>
+                <p>Este curso lo desarrolle en la pagina web de sololearn</p>
+                <a class="Btn-html" href="https://www.sololearn.com/certificates/CT-K8N3GVUO" target="_blank"> Certificado</a>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Curso Web Development Fundamentals </h4>
+                <p>Este curso lo desarrolle en la pagina web de sololearn</p>
+                <a class="Btn-fun" href="https://www.sololearn.com/certificates/CT-UMCLIKOV" target="_blank"> Certificado</a>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>Curso Bootcamp-HTML,CSS y Javascript </h4>
+                <p>Este curso lo desarrolle en la pagina web de sololearn</p>
+                <a class="Btn-bootcamp" href="https://www.udemy.com/certificate/UC-4467ee2c-b494-4a70-8e5b-06e72a57e311/" target="_blank"> Certificado</a>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Curso Responsive web design </h4>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
+                <a class="Btn-res" href="" target="_blank"> Certificado</a>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-palette"></i></span>
+                <h4>Pagina Web MVB diseños </h4>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
+                <a class="Btn-MVB" href="https://mvb1512.github.io/mvbdise-os.github.io/" target="_blank"> Pagina</a>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-person-circle-question"></i></span>
+                <h4>Pagina web Calculadora Basica con Javascript</h4>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
+                <a class="Btn-calc" href="https://mvb1512.github.io/calculadoramvb.github.io/" target="_blank"> pagina</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">MIS HOBBIES Y GUSTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://images.hdqwalls.com/download/basketball-hd-1600x1200.jpg" alt="">
+                <div class="info">
+                    <h4>Basket</h4>
+                   
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/basket2.jfif" alt="">
+                <div class="info">
+                    <h4>Basket</h4>
+                    
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://i.ebayimg.com/images/g/G44AAOSwS-hh4Ylv/s-l1600.jpg" alt="">
+                <div class="info">
+                    <h4>Basket</h4>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/41ccd21b-2bcc-48c9-9524-28afdf139289.jfif" alt="">
+                <div class="info">
+                    <h4>Ciclismo</h4>
+                   
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://img3.goodfon.com/original/1600x1200/c/f8/ciclismo-bicicleta-velocidad.jpg" alt="">
+                <div class="info">
+                    <h4>Ciclismo</h4>
+                  
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/CICLISMO.jpg" alt="">
+                <div class="info">
+                    <h4>Ciclismo</h4>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/coches.jfif" alt="">
+                <div class="info">
+                    <h4>Me encantan los coches</h4>
+                    
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/viajar.jfif" alt="">
+                <div class="info">
+                    <h4>Me encanta conocer lugares nuevos e interesantes</h4>
+                
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/aviones.jfif" alt="">
+                <div class="info">
+                    <h4>Me encantan los aviones</h4>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+       
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
